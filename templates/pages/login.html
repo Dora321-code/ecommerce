@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>e-Government Authority</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h2 style="text-align:center;">Hashicorp Vault System</h2>
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="email">Enter Username</label>
+      <input type="email" class="form-control" id="email" placeholder="email@domain" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Enter Password</label>
+      <input type="password" class="form-control" id="pwd" placeholder="xxxxxxxxxx" name="pwd">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" name="remember"> Remember me</label>
+    </div>
+    <button type="submit" class="btn btn-default">Login</button>
+
+    <div class="divider d-flex align-items-center my-4">
+        <p class="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+      </div>
+      <a class="btn btn-primary btn-lg btn-block" style="background-color: #000000" href="#!"
+        role="button">
+        <i class=""></i>Continue with Vault Engine
+        <!-- fab fa-facebook-f me-2 class for Hashicorp to be added that will link it above -->
+      </a><br>
+      <a href="{% url 'Register' %}">Register</a>
+  </form>
+</div>
+</body>
+</html>
